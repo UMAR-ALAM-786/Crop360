@@ -1,12 +1,12 @@
-#Crop360 | Holistic Plant & Crop Management
+## Crop360 | Holistic Plant & Crop Management
 (Diagnose | Decide | Predict)
 Live Output: Oct 2024 – Dec 2024
 
-#Description
+# Description
 Crop360 is an AI-driven agricultural platform that provides comprehensive support to farmers and agronomists. It helps them diagnose plant diseases, recommend suitable crops, and predict crop yields by analyzing data such as soil pH, sunlight exposure, geolocation, temperature, and humidity.
 Trained on 200,000+ datasets, Crop360 delivers actionable insights with a 97% disease detection accuracy, aiming to reduce crop losses by up to 30%.
 
-#Key Features
+# Key Features
 Plant Disease Detection: Uses Convolutional Neural Networks (CNNs) to detect and classify plant diseases from leaf images with 97% accuracy.
 
 Crop Recommendation: Suggests the best crop to cultivate based on:
@@ -21,7 +21,7 @@ Yield Prediction: Estimates crop productivity using regression models trained on
 
 User Interface: Built with Flask and Streamlit for a smooth and accessible user experience.
 
-#Technologies Used
+# Technologies Used
 1. Python: Core programming language
 
 2. Jupyter Notebook: Model development and testing
@@ -40,7 +40,7 @@ User Interface: Built with Flask and Streamlit for a smooth and accessible user 
 
 9. SDLC: Follows structured software lifecycle design
 
-##Folder Structure Explanation
+## Folder Structure Explanation
 csharp
 Copy
 Edit
