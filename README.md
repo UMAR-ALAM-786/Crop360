@@ -1,42 +1,117 @@
-# Crop Recommendation System Using Machine Learning
-# Description
-The Crop Recommendation System is a machine learning-based application that provides recommendations for suitable crops based on various environmental and soil conditions. It aims to assist farmers and agricultural professionals in making informed decisions about crop selection, optimizing yields, and maximizing profitability.
+Crop360 | Holistic Plant & Crop Management
+(Diagnose | Decide | Predict)
+Live Output: Oct 2024 – Dec 2024
 
-The system takes into account several factors such as soil type, climate, rainfall, temperature, humidity, and pH levels to determine the most suitable crops for a given region. By analyzing historical data and using predictive models, the system provides personalized recommendations tailored to the specific conditions of a farm or agricultural area.
+Description
+Crop360 is an AI-driven agricultural platform that provides comprehensive support to farmers and agronomists. It helps them diagnose plant diseases, recommend suitable crops, and predict crop yields by analyzing data such as soil pH, sunlight exposure, geolocation, temperature, and humidity.
+Trained on 200,000+ datasets, Crop360 delivers actionable insights with a 97% disease detection accuracy, aiming to reduce crop losses by up to 30%.
 
-# Key Features
-Input Data Collection: The system allows users to input relevant data such as soil parameters, climate information, and geographic location.
-Data Preprocessing: The input data is preprocessed to handle missing values, normalize or scale features, and transform categorical variables.
-Machine Learning Models: Various machine learning algorithms are employed, including decision trees, random forests, support vector machines (SVM), and gradient boosting techniques, to build predictive models.
-Model Training and Evaluation: The models are trained on historical data and evaluated using appropriate performance metrics to ensure accuracy and reliability.
-Crop Recommendation: Based on the trained models, the system recommends the most suitable crops for the given input parameters.
-User-Friendly Interface: The system provides a user-friendly interface where users can easily input their data, view recommendations, and explore additional information.
+Key Features
+Plant Disease Detection: Uses Convolutional Neural Networks (CNNs) to detect and classify plant diseases from leaf images with 97% accuracy.
 
-# Technologies Used
-Python: Programming language used for model development, data preprocessing, and web application development.
-Scikit-learn: Machine learning library used for model training, evaluation, and prediction.
-Pandas: Data manipulation library used for data preprocessing and analysis.
-NumPy: Library for numerical computing used for handling arrays and mathematical operations.
-Flask: Web framework used for building the user interface and handling HTTP requests.
-HTML/CSS: Markup and styling languages used for designing the web interface.
-JavaScript: Scripting language used for client-side interactions and enhancing the user interface.
-# Installation and Usage
-Clone the repository: git clone https://github.com/your-username/crop-recommendation-system.git
-Install the required dependencies: pip install -r requirements.txt
-Run the application: python app.py
-Access the application through the web browser at http://localhost:5000
-# Future Enhancements
-Integration of real-time weather data to improve the accuracy of recommendations.
-Incorporation of crop market prices and profitability analysis to assist farmers in making economically viable decisions.
-Development of a mobile application for convenient access and usage on smartphones and tablets.
-Integration of user feedback and data collection to continuously enhance the recommendation system's performance.
-Contributing
-Contributions to the project are welcome. If you have any suggestions, bug reports, or feature requests, please submit them through the issue tracker on the GitHub repository.
+Crop Recommendation: Suggests the best crop to cultivate based on:
 
+Soil characteristics: pH, type, nutrients
 
+Climate data: rainfall, temperature, humidity
 
-# Acknowledgements
-We would like to express our gratitude to the agricultural research community, farmers, and organizations for providing valuable insights, data, and domain knowledge that contributed to the development of this Crop Recommendation System.
+Geocoordinates and sunlight exposure
 
-# Contact
-For any inquiries or questions, please contact us at 611noorsaeed@gmail.com
+Yield Prediction: Estimates crop productivity using regression models trained on historical agricultural data.
+
+User Interface: Built with Flask and Streamlit for a smooth and accessible user experience.
+
+Technologies Used
+Python: Core programming language
+
+Jupyter Notebook: Model development and testing
+
+TensorFlow, Keras: Deep learning model implementation
+
+scikit-learn: Machine learning and data modeling
+
+NumPy, Pandas: Data preprocessing and manipulation
+
+Matplotlib, Seaborn: Data visualization
+
+Streamlit, Flask: Web-based deployment
+
+CNNs: For image-based disease detection
+
+SDLC: Follows structured software lifecycle design
+
+Folder Structure Explanation
+csharp
+Copy
+Edit
+Crop360/
+│
+├── app.py
+├── requirements.txt
+│
+├── static/
+│   └── img.jpg         # Store images, stylesheets, etc.
+│
+├── templates/
+│   └── index.html      # Store HTML templates for rendering
+│
+└── model/
+    └── crop_model.pkl  # Trained ML model
+Image & Template Integration in Flask
+In your HTML (inside templates/index.html):
+
+html
+Copy
+Edit
+<img src="{{ url_for('static', filename='img.jpg') }}" alt="Crop Image">
+In your Flask route (inside app.py):
+
+python
+Copy
+Edit
+from flask import Flask, render_template
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+Installation and Usage
+bash
+Copy
+Edit
+# Step 1: Clone the repository
+git clone https://github.com/UMAR-ALAM-786/Crop360.git
+
+# Step 2: Navigate to the project directory
+cd Crop360
+
+# Step 3: Install dependencies
+pip install -r requirements.txt
+
+# Step 4: Run the application
+python app.py
+
+# Step 5: Access it via browser
+http://localhost:5000
+Future Enhancements
+Integration of real-time weather APIs
+
+Inclusion of crop market prices to guide economically viable decisions
+
+Development of mobile application (Android/iOS)
+
+User feedback loops to continuously retrain and improve model accuracy
+
+Multilingual support for broader accessibility
+
+Contributions
+Contributions are highly welcome!
+Feel free to submit suggestions, issues, or pull requests via GitHub Issues.
+
+Acknowledgements
+We acknowledge the support of the agricultural research community, data contributors, and farmers who helped shape the foundation of Crop360.
+
+Contact
+Email: alamumar786@gmail.com
+
+GitHub: UMAR-ALAM-786
