@@ -1,12 +1,12 @@
-Crop360 | Holistic Plant & Crop Management
+##Crop360 | Holistic Plant & Crop Management
 (Diagnose | Decide | Predict)
 Live Output: Oct 2024 – Dec 2024
 
-Description
+##Description
 Crop360 is an AI-driven agricultural platform that provides comprehensive support to farmers and agronomists. It helps them diagnose plant diseases, recommend suitable crops, and predict crop yields by analyzing data such as soil pH, sunlight exposure, geolocation, temperature, and humidity.
 Trained on 200,000+ datasets, Crop360 delivers actionable insights with a 97% disease detection accuracy, aiming to reduce crop losses by up to 30%.
 
-Key Features
+##Key Features
 Plant Disease Detection: Uses Convolutional Neural Networks (CNNs) to detect and classify plant diseases from leaf images with 97% accuracy.
 
 Crop Recommendation: Suggests the best crop to cultivate based on:
@@ -21,26 +21,26 @@ Yield Prediction: Estimates crop productivity using regression models trained on
 
 User Interface: Built with Flask and Streamlit for a smooth and accessible user experience.
 
-Technologies Used
-Python: Core programming language
+##Technologies Used
+1. Python: Core programming language
 
-Jupyter Notebook: Model development and testing
+2. Jupyter Notebook: Model development and testing
 
-TensorFlow, Keras: Deep learning model implementation
+3. TensorFlow, Keras: Deep learning model implementation
 
-scikit-learn: Machine learning and data modeling
+4. scikit-learn: Machine learning and data modeling
 
-NumPy, Pandas: Data preprocessing and manipulation
+5. NumPy, Pandas: Data preprocessing and manipulation
 
-Matplotlib, Seaborn: Data visualization
+6. Matplotlib, Seaborn: Data visualization
 
-Streamlit, Flask: Web-based deployment
+7. Streamlit, Flask: Web-based deployment
 
-CNNs: For image-based disease detection
+8. CNNs: For image-based disease detection
 
-SDLC: Follows structured software lifecycle design
+9. SDLC: Follows structured software lifecycle design
 
-Folder Structure Explanation
+##Folder Structure Explanation
 csharp
 Copy
 Edit
@@ -112,6 +112,6 @@ Acknowledgements
 We acknowledge the support of the agricultural research community, data contributors, and farmers who helped shape the foundation of Crop360.
 
 Contact
-Email: alamumar786@gmail.com
+Email: alamumar91@gmail.com
 
 GitHub: UMAR-ALAM-786
