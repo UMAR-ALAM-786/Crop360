@@ -1,4 +1,4 @@
-## Crop360 | Holistic Plant & Crop Management
+# Crop360 | Holistic Plant & Crop Management
 (Diagnose | Decide | Predict)
 Live Output: Oct 2024 – Dec 2024
 
